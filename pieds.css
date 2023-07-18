@@ -1,0 +1,146 @@
+@font-face {
+    font-family: "Poppins";
+    src: url(Poppins-Regular.ttf) format("truetype");
+}
+
+*{
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+body {
+    background: linear-gradient(rgba(14, 19, 31, 0.9), rgba(14, 19, 31, 0.9)), url(img/background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 99%;
+    height: 100vh;
+    align-items: center;
+    text-align: justify;
+    background-color: #0E131F;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 15%;
+    background-color: #ffa987;
+}
+
+p {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-right: 40px;
+    margin-left: 40px;
+    font-size: 22px;
+    color: #F7EBE8;
+}
+
+img{
+    margin-right: 60px;
+    margin-left: 60px;
+}
+
+.logo{
+    size: 20px;
+    padding:0;
+    margin: 0;
+}
+
+.contenu{
+    margin: 40px;
+}
+
+.navbar{
+    display: flex;
+}
+
+.navbar a{
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 20px;
+    margin: 0 5px;
+    color: #0E131F;
+    transition: all .45s ease;
+    border-radius: 5px;
+}
+
+.navbar a:hover{
+    background:  #e54b4b;
+}
+
+#menu-icon{
+    font-size: 30px;
+    z-index: 100012;
+    color: #0E131F;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width: 1530px){
+    header{
+        padding: 18px 3%;
+        transition: .2s;
+    }
+    .contenu{
+        margin: 30px;
+    }
+}
+
+@media (max-width: 1070px){
+    header{
+        padding: 18px 3%;
+        transition: .2s;
+    }
+    body{
+        width: 97%;
+    }
+    p {
+        font-size: 18px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    img{
+        margin-right: 30px;
+        margin-left: 30px;
+    }
+    .contenu{
+        margin: 10px;
+    }
+    #menu-icon{
+        display: block;
+    }
+    .navbar{
+        position: absolute;
+        top: -800%;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        background:#ffa987;
+        transition: all .50s ease;
+        text-align: left;
+    }
+    .navbar a{
+        display: block;
+        padding: 1rem;
+        margin: 0.8rem;
+    }
+    .navbar.open{
+        top: 100%;
+    }
+}
+
+
+h1 {
+    color: #ff000098;
+    font-size: 15px;
+    text-align: center;
+}
