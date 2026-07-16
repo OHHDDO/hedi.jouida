@@ -3,12 +3,13 @@
     src: url(Poppins-Regular.ttf) format("truetype");
 }
 
-*{
+* {
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     text-decoration: none;
     list-style: none;
 }
+
 body {
     background: linear-gradient(rgba(14, 19, 31, 0.9), rgba(14, 19, 31, 0.9)), url(img/background.jpg);
     background-size: cover;
@@ -21,7 +22,7 @@ body {
     background-color: #0E131F;
 }
 
-header{
+header {
     position: fixed;
     width: 100%;
     top: 0;
@@ -43,26 +44,28 @@ p {
     color: #F7EBE8;
 }
 
-img{
+img {
     margin-right: 60px;
     margin-left: 60px;
 }
 
-.logo{
+.logo {
     size: 20px;
-    padding:0;
+    padding: 0;
     margin: 0;
 }
 
-.contenu{
-    margin: 40px;
+.contenu {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.navbar{
+.navbar {
     display: flex;
 }
 
-.navbar a{
+.navbar a {
     font-size: 16px;
     font-weight: 500;
     padding: 10px 20px;
@@ -72,11 +75,11 @@ img{
     border-radius: 5px;
 }
 
-.navbar a:hover{
-    background:  #e54b4b;
+.navbar a:hover {
+    background: #e54b4b;
 }
 
-#menu-icon{
+#menu-icon {
     font-size: 30px;
     z-index: 100012;
     color: #0E131F;
@@ -84,56 +87,65 @@ img{
     display: none;
 }
 
-@media (max-width: 1530px){
-    header{
+@media (max-width: 1530px) {
+    header {
         padding: 18px 3%;
         transition: .2s;
     }
-    .contenu{
+
+    .contenu {
         margin: 30px;
     }
 }
 
-@media (max-width: 1070px){
-    header{
+@media (max-width: 1070px) {
+    header {
         padding: 18px 3%;
         transition: .2s;
     }
-    body{
+
+    body {
         width: 97%;
     }
+
     p {
         font-size: 18px;
         margin-right: 10px;
         margin-left: 10px;
     }
-    img{
+
+    img {
         margin-right: 30px;
         margin-left: 30px;
     }
-    .contenu{
+
+    .contenu {
         margin: 10px;
     }
-    #menu-icon{
+
+    #menu-icon {
         display: block;
     }
-    .navbar{
+
+    .navbar {
         position: absolute;
         top: -800%;
         left: 0;
         right: 0;
         display: flex;
         flex-direction: column;
-        background:#ffa987;
+        background: #ffa987;
         transition: all .50s ease;
         text-align: left;
     }
-    .navbar a{
+
+    .navbar a {
         display: block;
         padding: 1rem;
         margin: 0.8rem;
     }
-    .navbar.open{
+
+    .navbar.open {
         top: 100%;
     }
 }
